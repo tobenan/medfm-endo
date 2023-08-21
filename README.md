@@ -1,4 +1,3 @@
-
 # NeurIPS 2023 - MedFM: Foundation Model Prompting for Medical Image Classification Challenge 2023
 
 A naive baseline and submission demo for the [Foundation Model Prompting for Medical Image Classification Challenge 2023 (MedFM)](https://medfm2023.grand-challenge.org/medfm2023/).
@@ -46,7 +45,7 @@ MedFM (root)/
     │   ├── swin-b_vpt
     │   ├── dinov2-b_vpt
     │   └── ...
-    ├── data             
+    ├── data           
     │   ├── MedFMC_train      # unzip the download file
     │   ├── MedFMC_val
     │   └── ...
@@ -164,7 +163,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 ## Citation
 
-TO BE ADDED.
-============
+TO BE ADDED.1111
+================
 
 14662e92d0a5769b973ea45c9bbeb07a87d7f5ec
