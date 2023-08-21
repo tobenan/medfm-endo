@@ -1,0 +1,1 @@
+export PYTHONPATH=$PWD:$PYTHONPATH /media/soft/mzm/miniconda3/envs/mmpretrain/bin/python
