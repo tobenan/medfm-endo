@@ -1,3 +1,4 @@
+
 # NeurIPS 2023 - MedFM: Foundation Model Prompting for Medical Image Classification Challenge 2023
 
 A naive baseline and submission demo for the [Foundation Model Prompting for Medical Image Classification Challenge 2023 (MedFM)](https://medfm2023.grand-challenge.org/medfm2023/).
@@ -20,22 +21,22 @@ The results of ChestDR, ColonPath and Endo in MedFMC dataset and their correspon
 
 ### Few-shot Learning Results (10-shot/AUC)
 
-We utilize [Visual Prompt Tuning](https://github.com/KMnP/vpt) method as the few-shot learning baseline, 
+We utilize [Visual Prompt Tuning](https://github.com/KMnP/vpt) method as the few-shot learning baseline,
 The results are shown as below:
 
-|  Dataset \ Backbone  |   [Swin(384)](./configs/swin-b_vpt/)  |  [ViT-cls(384)](./configs/vit-b_vpt/) |  [ViT-eva2(448)](./configs/eva-b_vpt/) |  [ViT-dinov2(512)](./configs/dinov2-b_vpt/) | [ViT-clip(384)](./configs/clip-b_vpt/) |
-| :------------------: |  :----: | :------: | :------:  |  :---------: | :------: | 
-|  ChestDR (10-shot)   |  64.66  |   67.96  |   65.69   |      67.16   |   66.60  |
-| ColonPath (10-shot)  |  97.62  |   98.13  |   97.62   |      97.30   |   98.11  |
-|     Endo (10-shot)   |  64.89  |   66.18  |   67.78   |      64.40   |   65.79  |
- 
+| Dataset \ Backbone | [Swin(384)](./configs/swin-b_vpt/) | [ViT-cls(384)](./configs/vit-b_vpt/) | [ViT-eva2(448)](./configs/eva-b_vpt/) | [ViT-dinov2(512)](./configs/dinov2-b_vpt/) | [ViT-clip(384)](./configs/clip-b_vpt/) |
+| :-----------------: | :-----------------------------: | :-------------------------------: | :--------------------------------: | :-------------------------------------: | :---------------------------------: |
+|  ChestDR (10-shot)  |              64.66              |               67.96               |               65.69               |                  67.16                  |                66.60                |
+| ColonPath (10-shot) |              97.62              |               98.13               |               97.62               |                  97.30                  |                98.11                |
+|   Endo (10-shot)   |              64.89              |               66.18               |               67.78               |                  64.40                  |                65.79                |
+
  All the bakcbones use 'base' arch.
 
 ## Usage
 
 ### Preparation
 
-Prepare data following [MMPreTrain](https://github.com/open-mmlab/mmpretrain). Download the dataset and unzip the '.zip' files into {$MedFM}/data/ as following: 
+Prepare data following [MMPreTrain](https://github.com/open-mmlab/mmpretrain). Download the dataset and unzip the '.zip' files into {$MedFM}/data/ as following:
 
 ```text
 MedFM (root)/
@@ -45,7 +46,7 @@ MedFM (root)/
     │   ├── swin-b_vpt
     │   ├── dinov2-b_vpt
     │   └── ...
-    ├── data               
+    ├── data             
     │   ├── MedFMC_train      # unzip the download file
     │   ├── MedFMC_val
     │   └── ...
@@ -126,8 +127,6 @@ docker run --gpus all --shm-size=8g -it -v {DATA_DIR}:/medfmc/data medfmc
 
 ### Build Docker and make sanity test
 
-
-
 The submitted docker will be evaluated by the following command:
 
 ```bash
@@ -166,3 +165,6 @@ This project is released under the [Apache 2.0 license](LICENSE).
 ## Citation
 
 TO BE ADDED.
+============
+
+14662e92d0a5769b973ea45c9bbeb07a87d7f5ec
